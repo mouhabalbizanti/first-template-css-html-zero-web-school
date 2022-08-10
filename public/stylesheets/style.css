@@ -14,15 +14,18 @@
   font-size: 17px;
   color: #575757;
 }
+
 .head {
   font-weight: 800;
   margin: 20px 0;
 }
+
 .para {
   color: #777;
   line-height: 20px;
   margin: 0 18px;
 }
+
 /* End Component */
 /* Start Variables */
 :root {
@@ -38,7 +41,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,6 +60,8 @@ body {
   align-items: center;
   /* background-color: rosybrown; */
   margin: auto;
+  position: relative;
+
 }
 
 .header .links {
@@ -68,9 +73,10 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 30px;
+  margin-right: 10px;
 }
 
-.header .container .icolink .icon:hover div:nth-child(2) {
+.header .container .icolink:hover div:nth-child(2) {
   width: 100%;
 }
 
@@ -106,13 +112,13 @@ body {
   margin: 0;
   padding: 5px;
   position: absolute;
-  right: 10px;
+  right: 15px;
   min-width: 100px;
   list-style: none;
   background: #ebebeb;
-  top: calc(0% + 50px);
+  top: calc(0% + 42px);
   z-index: 10;
-  /* display: none; */
+  display: none;
 }
 
 .header .container .icolink .links li a {
@@ -269,7 +275,7 @@ body {
 
 .services .container4 .service .col .elebox1 .text {
   margin: 0 18px;
-  
+
 }
 
 .services .container4 .service .col .elebox1 h1 {
@@ -278,6 +284,7 @@ body {
   margin: auto;
   font-weight: 800;
 }
+
 .services .container4 .service .col .elebox1 p {
   color: #777;
   line-height: 20px;
@@ -329,21 +336,23 @@ body {
 
   }
 }
-  @media (max-width: 1028px) {
-    .services .container4 .service .imag-col {
-      display: none;
-    }
 
+@media (max-width: 1028px) {
+  .services .container4 .service .imag-col {
+    display: none;
   }
+
+}
 
 
 /* End Servecis */
 
 /* Start Portfolio */
 .portfolio {
-    background-color: var(--section-background);
-padding: 0 30px;
+  background-color: var(--section-background);
+  padding: 0 30px;
 }
+
 .portfolio .container4 .service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -361,9 +370,10 @@ padding: 0 30px;
 }
 
 .portfolio .container4 .service .card .elebox1 .text {
-padding: 20px 45px 20px 20px;
+  padding: 20px 45px 20px 20px;
 }
-.portfolio .container4 .service .card .elebox1  {
+
+.portfolio .container4 .service .card .elebox1 {
   background-color: white;
 }
 
@@ -373,6 +383,7 @@ padding: 20px 45px 20px 20px;
   margin: auto;
   font-weight: 800;
 }
+
 .portfolio .container4 .service .card .elebox1 p {
   color: #777;
   line-height: 20px;
@@ -395,40 +406,44 @@ padding: 20px 45px 20px 20px;
 
   }
 }
- /* End Portfolio */
 
- /* Start About */
+/* End Portfolio */
+
+/* Start About */
 .about {
-padding: 0 30px;
+  padding: 0 30px;
 }
+
 .about .container4 .service {
-display: flex;
-flex-wrap: wrap;
-/* gap: 100px; */
-justify-content: space-evenly;
-justify-items: center;
-align-items: center;
-align-content: center;
-gap: 15px;
-margin-top: 100px;
-margin-bottom: 60px;
-margin-right: 18px;
-margin-left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 100px; */
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 15px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-right: 18px;
+  margin-left: 18px;
 }
 
 
 .about .container4 .service .comtext h2 {
-font-size: large;
-margin-top: 0%;
-font-weight: 800;
-line-height: 1.6;
+  font-size: large;
+  margin-top: 0%;
+  font-weight: 800;
+  line-height: 1.6;
 }
+
 .about .container4 .service .comtext p {
-color: #777;
-line-height: 20px;
-font-size: small;
-line-height: 1.6;
+  color: #777;
+  line-height: 20px;
+  font-size: small;
+  line-height: 1.6;
 }
+
 .about .container4 .service .comtext .sep {
   content: "";
   width: 175px;
@@ -436,29 +451,34 @@ line-height: 1.6;
   background-color: var(--main-color);
   margin-top: 30px;
 }
+
 .about .container4 .service .comimag img {
   max-height: 220px;
-max-width: 100%;
+  max-width: 100%;
 }
-.about .container4 .service .comtext  {
+
+.about .container4 .service .comtext {
   margin-left: 60px;
   margin-top: 55px;
-flex-basis: 350px;
+  flex-basis: 350px;
 }
+
 .about .container4 .service .comimag {
   position: relative;
   margin-right: 50px;
 }
+
 .about .container4 .service .comimag::after {
   content: "";
-    background-color: #eeeeee;
-    width: 60px;
-    height: calc(220px + 70px);
-    position: absolute;
-    top: -35px;
-    left: -10px;
-    z-index: -1;
+  background-color: #eeeeee;
+  width: 60px;
+  height: calc(220px + 70px);
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  z-index: -1;
 }
+
 .about .container4 .service .comimag::before {
   content: "";
   width: 48px;
@@ -473,24 +493,26 @@ flex-basis: 350px;
 
 
 @media (max-width: 767px) {
-.about .container4 .service .card {
-  text-align: center;
-}
+  .about .container4 .service .card {
+    text-align: center;
+  }
 }
 
 @media (min-width: 712px) {
-.about .container4 .service .card .elebox1 h1 {
-  margin-left: 0;
+  .about .container4 .service .card .elebox1 h1 {
+    margin-left: 0;
 
+  }
 }
-}
+
 /* End About */
- /* Start contact */
+/* Start contact */
 .contact {
-padding: 30px 0;
-background-color: var(--section-background);
-text-align: center;
+  padding: 30px 0;
+  background-color: var(--section-background);
+  text-align: center;
 }
+
 .contact .line1 {
   color: var(--secondary-color);
   font-size: 35px;
@@ -498,11 +520,13 @@ text-align: center;
   margin-top: 100px;
   letter-spacing: -2px;
 }
+
 @media (max-width: 720px) {
   .contact .line1 {
     font-size: 25px;
-  }  
+  }
 }
+
 .contact .line2 {
   font-size: 30px;
   font-weight: bold;
@@ -511,14 +535,16 @@ text-align: center;
   letter-spacing: -1px;
   text-decoration: none;
 }
+
 .contact .icon {
   margin: 25px 0;
-    font-size: 18px;
+  font-size: 18px;
 }
+
 .contact .icon a {
-color: var(--main-color);
-margin: 4px;
-text-decoration: none;
+  color: var(--main-color);
+  margin: 4px;
+  text-decoration: none;
 }
 
 /* End contact */
@@ -529,12 +555,15 @@ text-decoration: none;
   color: white;
   text-align: center;
 }
-.footer span{
+
+.footer span {
   color: var(--main-color);
 }
-.footer div{
-padding: 15px 0;
+
+.footer div {
+  padding: 15px 0;
 }
+
 /* End Footer */
 
 /* Start Meida Query */
@@ -546,11 +575,7 @@ padding: 15px 0;
     width: 720px;
   }
 
-  .header .container .icolink .links {
-    right: 30px;
-    top: calc(0% + 48px);
-    /* display: none; */
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -571,11 +596,7 @@ padding: 15px 0;
     width: 920px;
   }
 
-  .header .container .icolink .links {
-    right: 44px;
-    top: calc(0% + 50px);
-    /* display: none; */
-  }
+
 }
 
 /* Large */
@@ -585,11 +606,7 @@ padding: 15px 0;
     width: 1100px;
   }
 
-  .header .container .icolink .links {
-    right: 57px;
-    top: calc(0% + 55px);
-    /* display: none; */
-  }
+
 }
 
 
